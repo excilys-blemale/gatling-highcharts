@@ -1,5 +1,6 @@
 <% import com.excilys.ebi.gatling.charts.util.Colors._ %>
 <%@ val chartTitle: String %>
+<%@ val expand: Boolean %>
 
 Highcharts.setOptions({
 	global: {
@@ -95,7 +96,7 @@ var indicatorsChart = new Highcharts.Chart({
 					color: '<%=RED%>'
 				}
 			],
-			center: [500, 85],
+			center: [<%= if (expand) 770 else 500 %>, 85],
 			size: 100,
 			showInLegend: false,
 			dataLabels: { enabled: false }

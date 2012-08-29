@@ -9,8 +9,8 @@ import com.excilys.ebi.gatling.highcharts.template.RequestDetailsIndicatorTempla
 
 object RequestDetailsIndicatorComponent {
 
-	def apply() = {
-		val template = new RequestDetailsIndicatorTemplate
+	def apply(global: Boolean) = {
+		val template = new RequestDetailsIndicatorTemplate(global)
 
 		new HighchartsComponent(template)
 	}

@@ -1,3 +1,4 @@
-						<div class="schema demi">
-							<div id="container_indicators" class="demi"></div>
+<%@ val expand: Boolean %>
+						<div class="schema <%= if(expand) "geant" else "demi" %>">
+							<div id="container_indicators" class="<%= if(expand) "geant" else "demi" %>"></div>
 						</div>
