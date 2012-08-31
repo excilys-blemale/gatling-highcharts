@@ -17,12 +17,17 @@ new Highcharts.Chart({
 	chart:{
 		renderTo:'container_number_of_requests',
 		polar:true,
-		type:'column'
+		type:'column',
+		height:330
+	},
+
+	credits:{
+		enabled:false
 	},
 
 	title:{
 		text:'<span class="chart_title">Number of requests</span>',
-		useHTML:true
+		useHTML: true
 	},
 
 	xAxis:{
@@ -45,12 +50,14 @@ new Highcharts.Chart({
 
 	series:[
 		{
-			name:'OK',
-			data:numberOfRequestsOK
+			name:'KO',
+			data:numberOfRequestsKO,
+			color:"#FF0000"
 		},
 		{
-			name:'KO',
-			data:numberOfRequestsKO
+			name:'OK',
+			data:numberOfRequestsOK,
+			color:"#4572A7"
 		}
 	]
 });

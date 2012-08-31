@@ -1,7 +1,3 @@
-						<div class="infos">
-							<div class="titre">STATISTICS</div>
-							<div class="infos-in">
-								<div class="repli"></div>								
-								<div id="container_number_of_requests" class="info"></div>
-							</div>
+						<div class="schema polar">
+							<div id="container_number_of_requests"></div>
 						</div>
