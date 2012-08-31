@@ -18,5 +18,5 @@ class ComponentLibraryImpl extends ComponentLibrary {
 	def getRequestDetailsResponseTimeDistributionChartComponent(responseTimesSuccess: Series[Long, Long], responseTimesFailures: Series[Long, Long]): Component = RequestDetailsResponseTimeDistributionComponent(responseTimesSuccess, responseTimesFailures)
 	def getRequestDetailsLatencyChartComponent(latencySuccess: Series[Long, (Long, Long)], latencyFailures: Series[Long, (Long, Long)]): Component = RequestDetailsLatencyComponent(latencySuccess, latencyFailures)
 	def getRequestDetailsScatterChartComponent(successes: Series[Long, Long], failures: Series[Long, Long]): Component = RequestDetailsScatterComponent(successes, failures)
-	def getRequestDetailsIndicatorChartComponent(global: Boolean): Component = RequestDetailsIndicatorComponent(global)
+	def getRequestDetailsIndicatorChartComponent: Component = RequestDetailsIndicatorComponent()
 }
